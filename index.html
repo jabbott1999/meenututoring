@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.png?v=2" />
+    <title>Meenu Tutoring</title>
+</head>
+
+<body class="scroll">
+
+    <a href="#home">
+    </a>
+
+
+    <div id="nav-container" class="container" style="width: 300px;">
+
+        <h1>
+            Meenu
+        </h1>
+
+        <a href="#home">
+            <div>
+                <h2 style="opacity: 1; font-size: 30px">English Tutoring</h2>
+                <h2 style="opacity: 0.6;">Exam Preparation</h2>
+                <h2 style="opacity: 0.45;">Proofreading</h2>
+                <h2 style="opacity: 0.3;">CV Writing</h2>
+                <h2 style="opacity: 0.15;">Editing</h2>
+            </div>
+        </a>
+
+
+        <div id="nav">
+            <ul>
+                <li>
+                    <a href="#about-me">
+                        <h3>ABOUT ME</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services">
+                        <h3>SERVICES</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#pricing">
+                        <h3>PRICING</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#how-i-work">
+                        <h3>HOW I WORK</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#testimonials">
+                        <h3>TESTIMONIALS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#faq">
+                        <h3>FAQ</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <h3>CONTACT</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+
+    <div id="content" class="container">
+
+        <div class="segment" id="home" data-parallax="scroll" data-image-src="Images/london.jpg" data-speed="0.5">
+
+            <div class="heading-box">
+
+                <h1>English Language Tuition</h1>
+                <h2>North-West London and Online</h2>
+
+            </div>
+
+
+        </div>
+
+        <div class="segment" id="about-me">
+
+            <table class="box" style="left: calc(50% - 400px);">
+                <tr>
+                    <td class="box-left">
+
+                        <img src="Images/meenu2.jpg" style="width: 100%; margin-top: 60px;">
+
+                    </td>
+
+                    <td class="box-right">
+                        <h1>Hello!<br>I'm Meenu.</h1>
+
+                        <p>
+                            I am a native, CELTA qualified (Grade A) teacher of English. I have been teaching English for almost ten years. I specialise in teaching EFL (English as a Foreign Language) to adults.
+                        </p>
+                        <p>
+                            After graduating with an LL.B (Hons) Law degree, I started a career in advertising research. After several years of working in this industry, I decided to pursue a career in television. I worked as a researcher for documentaries and factual entertainment for various companies including the BBC and ITV.
+                        </p>
+                        <p>
+                            I discovered teaching some years later and taught in private language schools in London for eight years. Last year, I finally decided to leave the rat race behind and start my own venture in what I do best...teaching!
+                        </p>
+                        <p>
+                            I am an enthusiastic and friendly teacher and it gives me great satisfaction from seeing students achieve their goals. I am very passionate about teaching and I believe this is reflected in the positive feedback I have received throughout my training and employment.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </div>
+
+        <div class="segment" id="services" data-parallax="scroll" data-image-src="Images/book.jpg" data-speed="0.5">
+
+            <div class="banner">
+
+                <h1>SERVICES</h1>
+
+                <ul>
+                    <li>
+                        <p>General English: Beginner to Advanced</p>
+                    </li>
+                    <li>
+                        <p>Exam preparation: IELTS & Cambridge exams (PET, FCE and CAE)</p>
+                    </li>
+                    <li>
+                        <p>CV writing, job applications and interview techniques</p>
+                    </li>
+                    <li>
+                        <p>Proofreading and editing services for books and academic essays</p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="segment" id="pricing">
+        </div>
+
+        <div class="segment" id="how-i-work">
+        </div>
+
+        <div class="segment" id="testimonials">
+        </div>
+
+        <div class="segment" id="faq">
+        </div>
+
+        <div class="segment" id="contact">
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe/dist/gumshoe.polyfills.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="parallax.min.js"></script>
+        <script src="main.js"></script>
+
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+            var spy = new Gumshoe('#nav ul li a');
+        </script>
+
+    </footer>
+
+</body></html>
