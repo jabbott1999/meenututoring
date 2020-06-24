@@ -16,20 +16,14 @@
     </a>
 
 
-    <div id="nav-container" class="container" style="width: 300px;">
+    <div id="nav-container">
 
-        <h1>
-            Meenu
-        </h1>
+        <!-- Big Logo-->
+        <img id="big-logo" src="Images/logo.svg">
 
         <a href="#home">
-            <div>
-                <h2 style="opacity: 1; font-size: 30px">English Tutoring</h2>
-                <h2 style="opacity: 0.6;">Exam Preparation</h2>
-                <h2 style="opacity: 0.45;">Proofreading</h2>
-                <h2 style="opacity: 0.3;">CV Writing</h2>
-                <h2 style="opacity: 0.15;">Editing</h2>
-            </div>
+            <!-- Small Logo-->
+            <img id="small-logo" src="Images/small%20logo.svg">
         </a>
 
 
@@ -46,13 +40,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#pricing">
-                        <h3>PRICING</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#how-i-work">
-                        <h3>HOW I WORK</h3>
+                    <a href="#how-it-works">
+                        <h3>HOW IT WORKS</h3>
                     </a>
                 </li>
                 <li>
@@ -85,8 +74,6 @@
             <div class="heading-box">
 
                 <h1>English Language Tuition</h1>
-                <h2>North-West London and Online</h2>
-
             </div>
 
 
@@ -98,7 +85,7 @@
                 <tr>
                     <td class="box-left">
 
-                        <img src="Images/meenu2.jpg" style="width: 100%; margin-top: 60px;">
+                        <img src="Images/meenu3.jpg" style="width: 100%; margin-top: 60px;">
 
                     </td>
 
@@ -129,7 +116,7 @@
 
             <div class="banner">
 
-                <h1>SERVICES</h1>
+                <h1>Services</h1>
 
                 <ul>
                     <li>
@@ -154,10 +141,31 @@
 
         </div>
 
-        <div class="segment" id="pricing">
-        </div>
+        <div class="segment" id="how-it-works">
+            <table class="box" style="left: calc(50% - 400px);">
+                <tr>
+                    <td class="box-left" style="width: 500px;">
 
-        <div class="segment" id="how-i-work">
+
+                        <h1>How it Works</h1>
+
+                        <h2>Free Assessment</h2>
+                        <p>I send each new student an online test to complete in order to assess their level of English. This is followed by a phone conversation where I will conduct a short oral test. Thereafter, we will discuss any particular areas you wish to work on. I tailor my lesson to each student's specific needs.</p>
+
+                        <h2>Online Lessons</h2>
+                        <p>Due to the recent Corona virus outbreak, all lessons will be held online. Once government restrictions are eased, face to face lessons will resume.
+                            I have been teaching English online for over a year. In my experience as a teacher, face to face contact is always a better option, however, learning a language online also has many benefits and through my experience I have come across useful tools which help in my teaching. I use an interactive whiteboard called BitPaper in all of my lessons. It is simple and fun to use and allows both teacher and student to interact effectively.
+                        </p>
+
+                    </td>
+
+                    <td class="box-right" style="width: 200px;">
+
+                        <img src="Images/globe.jpg" style="width: 100%; margin-top: -110px;">
+
+                    </td>
+                </tr>
+            </table>
         </div>
 
         <div class="segment" id="testimonials">
@@ -183,8 +191,11 @@
         <script>
             var scroll = new SmoothScroll('a[href*="#"]');
             var spy = new Gumshoe('#nav ul li a');
+
         </script>
 
     </footer>
 
-</body></html>
+</body>
+
+</html>
