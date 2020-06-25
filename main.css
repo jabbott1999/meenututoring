@@ -39,6 +39,13 @@ a {
     display: none;
 }
 
+.social {
+    width: 22px;
+    right: 0px;
+    position: absolute;
+    bottom: 11px;
+}
+
 #big-logo {
     width: 300px;
     left: calc(50% - 150px);
@@ -99,7 +106,6 @@ a {
 .segment {
     width: 100%;
     position: relative;
-    min-height: 100vh;
     padding-top: 100px;
 }
 
@@ -174,6 +180,15 @@ a {
     text-align: left;
     color: rgba(65, 65, 65, 1);
     text-transform: uppercase;
+}
+
+.box h3 {
+    position: relative;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
+    color: rgba(80, 80, 80, 1);
 }
 
 .box p {

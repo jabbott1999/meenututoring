@@ -26,6 +26,28 @@
             <img id="small-logo" src="Images/small%20logo.svg">
         </a>
 
+        <a href="https://www.linkedin.com/in/meenu-chadha-b9664b29">
+            <!-- Linkedin Logo-->
+            <img class="social" src="Images/linkedin.svg" style="right: 10px;">
+        </a>
+
+        <a href="https://wa.me/447584438250?text=Hi%Meenu">
+            <!-- Whatsapp Logo-->
+            <img class="social" src="Images/whatsapp.svg" style="right: 50px;">
+        </a>
+
+
+        <a href="">
+            <!-- Email Logo-->
+            <img class="social" src="Images/email.svg" style="right: 90px;">
+        </a>
+
+        <a href="">
+            <!-- Email Logo-->
+            <img class="social" src="Images/phone.svg" style="right: 130px;">
+        </a>
+
+
 
         <div id="nav">
             <ul>
@@ -44,11 +66,11 @@
                         <h3>HOW IT WORKS</h3>
                     </a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="#testimonials">
                         <h3>TESTIMONIALS</h3>
                     </a>
-                </li>
+                </li>-->
                 <li>
                     <a href="#faq">
                         <h3>FAQ</h3>
@@ -61,8 +83,6 @@
                 </li>
             </ul>
         </div>
-
-
 
     </div>
 
@@ -216,11 +236,11 @@
             </table>
         </div>
 
-        <div class="segment" id="testimonials" data-parallax="scroll" data-image-src="Images/stars.jpg" data-speed="0.8">
+        <!--<div class="segment" id="testimonials" data-parallax="scroll" data-image-src="Images/stars.jpg" data-speed="0.8">
             <div class="banner">
                 <h1>Testimonials</h1>
             </div>
-        </div>
+        </div>-->
 
         <div class="segment" id="faq">
 
@@ -264,17 +284,24 @@
 
         </div>
 
-        <div class="segment" id="contact">
+        <div class="segment" id="contact" style="height: 100vh;">
 
             <table class="box" style="left: calc(50% - 400px);">
                 <tr>
 
+                    <td class="box-left">
+
+                        <div style="width: 100%; position: relative; background; transparent; height: 250px; top: 45px" data-parallax="scroll" data-image-src="Images/meenu2.jpg" data-speed="0.9"></div>
+
+                    </td>
+
                     <td class="box-right">
                         <h1>Contact</h1>
 
+                        <h2>Please get in touch to book or ask questions.</h2>
 
-                        <h2>+44 7947 380468</h2>
-                        <h2>meenu.chadha@gmail.com</h2>
+                        <h3>+44 7947 380468</h3>
+                        <h3>meenu.chadha@gmail.com</h3>
 
 
                     </td>
@@ -297,13 +324,12 @@
         <script src="main.js"></script>
 
         <script>
-            var scroll = new SmoothScroll('a[href*="#"]');
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                easing: 'easeInOutCubic'
+            });
             var spy = new Gumshoe('#nav ul li a');
-
         </script>
 
     </footer>
 
-</body>
-
-</html>
+</body></html>
