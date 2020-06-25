@@ -1,3 +1,10 @@
+<?php
+if($_POST["message"]) {
+    mail("jabbott1999@@gmail.com", "Form to email message", $_POST["message"], "From: queries@meenututoring.com");
+}
+?>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -276,15 +283,9 @@
                         <h2>+44 7947 380468</h2>
                         <h2>meenu.chadha@gmail.com</h2>
 
-                        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-                            Name:<br>
-                            <input type="text" name="name"><br>
-                            E-mail:<br>
-                            <input type="text" name="mail"><br>
-                            Comment:<br>
-                            <input type="text" name="comment" size="50"><br><br>
-                            <input type="submit" value="Send">
-                            <input type="reset" value="Reset">
+                        <form method="post" action="contact.php">
+                            <textarea name="message"></textarea>
+                            <input type="submit">
                         </form>
 
                     </td>
@@ -309,8 +310,11 @@
         <script>
             var scroll = new SmoothScroll('a[href*="#"]');
             var spy = new Gumshoe('#nav ul li a');
+
         </script>
 
     </footer>
 
-</body></html>
+</body>
+
+</html>
