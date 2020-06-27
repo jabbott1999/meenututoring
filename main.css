@@ -1,4 +1,13 @@
-<meta name="viewport"content="width=device-width, initial-scale=1" > .scroll::-webkit-scrollbar-track {
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+.scroll::-webkit-scrollbar-track {
     background-color: #F5F5F5;
 }
 
@@ -15,7 +24,6 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -24,7 +32,6 @@ a {
 }
 
 .container {
-    height: calc(100vh - 50px);
     top: 50px;
     display: block;
     width: 100%;
@@ -97,16 +104,20 @@ a {
     color: rgba(120, 120, 120, 1);
 }
 
+.mobile-image {
+    width: 100%;
+}
 
 
 #content {
-    position: absolute;
+    position: relative;
 }
 
 .segment {
     width: 100%;
     position: relative;
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 #home {
@@ -114,7 +125,6 @@ a {
     height: 100vh;
     background: transparent;
 }
-
 
 .heading-box {
     position: absolute;
@@ -124,6 +134,7 @@ a {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 0px;
 }
+
 
 .heading-box h1 {
     position: relative;
@@ -145,10 +156,47 @@ a {
     margin-top: -15px;
 }
 
+@media screen and (max-height: 800px),
+(max-width: 800px) {
+    .heading-box {
+        position: absolute;
+        width: 60%;
+        left: 20%;
+        top: 200px;
+        ;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 0px;
+    }
+
+    .heading-box h1 {
+        position: relative;
+        font-family: 'Lora', serif;
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .heading-box h2 {
+        position: relative;
+        font-family: 'Lora', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 25px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.9);
+        margin-top: -15px;
+    }
+
+}
+
+
+
 .box {
     position: relative;
     display: inline-block;
     width: 800px;
+    left: calc(50% - 400px);
 }
 
 .box-left {
@@ -160,6 +208,11 @@ a {
 .box-right {
     width: 500px;
     padding: 20px 0px 50px 25px;
+}
+
+.box-mobile {
+    width: 100%;
+    padding: 20px 25px 50px 25px;
 }
 
 .box h1 {
@@ -176,7 +229,7 @@ a {
     position: relative;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     text-align: left;
     color: rgba(65, 65, 65, 1);
     text-transform: uppercase;
@@ -217,11 +270,13 @@ a {
     color: rgba(80, 80, 80, 1);
 }
 
+
+
 .banner {
+    width: 100%;
     position: relative;
-    height: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .banner h1 {
@@ -252,4 +307,49 @@ a {
 
 #nav li.active a h3 {
     color: black;
+}
+
+td {
+    vertical-align: top;
+}
+
+#testimonial-controller {
+    width: 66px;
+    position: absolute;
+    left: calc(50% - 33px);
+    height: 20px;
+    bottom: 100px;
+}
+
+.mobile-view {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .desktop-view {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+
+    .box {
+        left: 0px;
+        width: 100%;
+    }
+
+    #testimonial-controller {
+        width: 66px;
+        position: absolute;
+        left: calc(50% - 33px);
+        height: 20px;
+        top: bottom: 0px;
+    }
+    
+    #testimonials {
+        height: calc(700px + 1.5vw);
+    }
+    
+
 }
