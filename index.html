@@ -19,14 +19,28 @@
     <div id="nav-container">
 
 
-
         <!-- Big Logo-->
-        <img id="big-logo" src="Images/big%20logo.svg">
+        <img class="desktop-view" id="big-logo" src="Images/big%20logo.svg">
 
         <a href="#home">
             <!-- Small Logo-->
-            <img id="small-logo" src="Images/small%20logo.svg">
+            <img class="desktop-view" id="small-logo" src="Images/big%20logo.svg">
         </a>
+
+        <a href="#home">
+            <!-- Mobile Logo-->
+            <img class="mobile-view" id="mobile-logo" src="Images/big%20logo.svg">
+        </a>
+
+        <!-- Open Mobile Menu Button -->
+        <img class="mobile-view" id="mobile-open-menu" src="Images/down.svg">
+        
+        <!-- Close Mobile Menu Button -->
+        <img class="mobile-view" id="mobile-close-menu" src="Images/up.svg">
+
+
+
+
 
         <a href="https://www.linkedin.com/in/meenu-chadha-b9664b29">
             <!-- Linkedin Logo-->
@@ -50,8 +64,47 @@
         </a>
 
 
+        
+        
+        <div id="mobile-nav" class="mobile-view">
+            
+             <ul style="margin-top: 50px;">
+                <li>
+                    <a href="#about-me">
+                        <h3>ABOUT ME</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services">
+                        <h3>SERVICES</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#how-it-works">
+                        <h3>HOW IT WORKS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#testimonials">
+                        <h3>TESTIMONIALS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#faq">
+                        <h3>FAQ</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <h3 class="contact-nav-item">CONTACT</h3>
+                    </a>
+                </li>
+            </ul>
 
-        <div id="nav">
+        </div>
+
+
+        <div id="nav" class="desktop-view">
             <ul>
                 <li>
                     <a href="#about-me">
@@ -80,11 +133,13 @@
                 </li>
                 <li>
                     <a href="#contact">
-                        <h3>CONTACT</h3>
+                        <h3 class="contact-nav-item">CONTACT</h3>
                     </a>
                 </li>
             </ul>
         </div>
+
+
 
     </div>
 
@@ -370,7 +425,7 @@
                                 </p>
                             </em>
                             <p>
-                                Joaquin Vidaller (Spanish student).
+                                Joaquin Vidaller (Spanish student)
                             </p>
 
                         </div>
@@ -378,7 +433,7 @@
                     </td>
 
                 </tr>
-                
+
                 <tr class="mobile-view">
                     <td class="box-mobile">
 
@@ -393,7 +448,7 @@
                             <h3>España</h3>
 
                         </div>
-                  
+
 
 
                         <div class="testimonial-text">
@@ -408,7 +463,7 @@
                                 </p>
                             </em>
                             <p>
-                                Joaquin Vidaller (Spanish student).
+                                Joaquin Vidaller (Spanish student)
                             </p>
 
                         </div>
@@ -565,13 +620,16 @@
     <script src="gumshoe.polyfills.min.js"></script>
     <script src="smooth-scroll.polyfills.min.js"></script>
     <script src="parallax.min.js"></script>
-    <script src="main.js"></script>
+
 
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
             easing: 'easeInOutCubic'
         });
         var spy = new Gumshoe('#nav ul li a');
+        var spyMobile = new Gumshoe('#mobile-nav ul li a');
     </script>
+
+    <script src="main.js"></script>
 
 </body></html>
