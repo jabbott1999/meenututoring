@@ -37,6 +37,59 @@ a {
     text-decoration: none;
 }
 
+#loading-cover {
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+
+#load-image {
+    width: 250px;
+    position: absolute;
+    left: calc(50% - 125px);
+    top: calc(50% - 150px);
+    
+}
+
+.loader {
+    border: 2px solid white;
+    border-radius: 50%;
+    border-top: 2px solid rgba(120, 120, 120, 1);
+    border-right: 2px solid rgba(120, 120, 120, 1);
+    border-left: 2px solid rgba(120, 120, 120, 1);
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .container {
     top: 50px;
     display: block;
@@ -45,8 +98,8 @@ a {
 }
 
 #small-logo {
-    width: 140px;
-    left: 5px;
+    width: 35px;
+    left: 6px;
     position: absolute;
     top: 9px;
     display: none;
@@ -102,7 +155,7 @@ a {
 
 #nav {
     position: absolute;
-    left: calc(50% - 287px);
+    left: calc(50% - 317px);
     padding: 0px;
     margin: 0px;
     bottom: 0px;
@@ -142,7 +195,7 @@ a {
     padding: 0px;
     float: left;
     text-align: center;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 10px 0px 10px;
 }
 
 #nav ul {
@@ -153,15 +206,11 @@ a {
 
 
 #nav-container h3 {
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-size: 13px;
     text-align: center;
     color: rgba(120, 120, 120, 1);
-}
-
-#mobile-nav {
-    
 }
 
 .mobile-image {
@@ -176,8 +225,8 @@ a {
 .segment {
     width: 100%;
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #home {
@@ -188,12 +237,13 @@ a {
 
 .heading-box {
     position: absolute;
-    width: 100%;
+    width: 900px;
     top: 30%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 0px;
     padding: 20px;
     float: left;
+    left: calc(50% - 450px);
 }
 
 
@@ -203,7 +253,7 @@ a {
     font-weight: 600;
     font-size: 70px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(80, 80, 80, 1);
 }
 
 .heading-box h2 {
@@ -213,7 +263,7 @@ a {
     font-weight: 400;
     font-size: 34px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(80, 80, 80, 1);
     margin-top: -15px;
 }
 
@@ -222,8 +272,10 @@ a {
     .heading-box {
         position: absolute;
         top: 200px;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255, 0.8);
         border-radius: 0px;
+        width: 100%;
+        left: 0%;
     }
 
     .heading-box h1 {
@@ -232,7 +284,7 @@ a {
         font-weight: 600;
         font-size: 40px;
         text-align: center;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(80, 80, 80, 1);
     }
 
     .heading-box h2 {
@@ -242,7 +294,7 @@ a {
         font-weight: 400;
         font-size: 25px;
         text-align: center;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(80, 80, 80, 1);
         margin-top: -15px;
     }
 
@@ -257,15 +309,20 @@ a {
     left: calc(50% - 400px);
 }
 
-.box-left {
-    width: 250px;
+.box-1 {
+    width: 300px;
     float: left;
     padding: 20px 25px 50px 0px;
 }
 
-.box-right {
+.box-2 {
     width: 500px;
     padding: 20px 0px 50px 25px;
+}
+
+.box-3 {
+    width: 150px;
+    padding: 20px 0px 50px 50px;
 }
 
 .box-mobile {
@@ -275,7 +332,7 @@ a {
 
 .box h1 {
     position: relative;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 700;
     font-size: 50px;
     text-align: left;
@@ -285,17 +342,17 @@ a {
 
 .box h2 {
     position: relative;
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
+    font-family: 'Lora', serif;
+    font-weight: 600;
     font-size: 20px;
     text-align: left;
-    color: rgba(65, 65, 65, 1);
+    color: rgba(75, 75, 75, 1);
     text-transform: uppercase;
 }
 
 .box h3 {
     position: relative;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 20px;
     text-align: left;
@@ -307,7 +364,7 @@ a {
     position: relative;
     font-family: 'Lora', serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
     color: rgba(80, 80, 80, 1);
     line-height: 24px;
@@ -317,15 +374,17 @@ a {
     padding: 0px;
     list-style: none;
     display: inline-block;
+    width: 100%;
 }
 
 .box ul p {
     position: relative;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 18px;
     text-align: left;
     color: rgba(80, 80, 80, 1);
+
 }
 
 
@@ -339,7 +398,7 @@ a {
 
 .banner h1 {
     position: relative;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 700;
     font-size: 50px;
     text-align: center;
@@ -352,7 +411,7 @@ a {
 
 .banner ul li {
     position: relative;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -377,9 +436,9 @@ td {
 }
 
 #testimonial-controller {
-    width: 66px;
+    width: 140px;
     position: absolute;
-    left: calc(50% - 33px);
+    left: calc(50% - 70px);
     height: 20px;
     bottom: 100px;
 }
@@ -388,7 +447,15 @@ td {
     display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+
+    .social {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
     .desktop-view {
         display: none !important;
     }
@@ -402,21 +469,22 @@ td {
         width: 100%;
     }
 
-    #testimonial-controller {
-        width: 66px;
-        position: absolute;
-        left: calc(50% - 33px);
-        height: 20px;
-        bottom: 100px;
-    }
-    
-    #testimonials {
-        height: calc(1100px - 25vw);
-    }
-    
     #nav-container {
         height: 50px !important;
     }
-    
+
+
+}
+
+@media screen and (max-width: 400px) {
+    #testimonial-header {
+        font-size: 35px;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    #testimonial-header {
+        font-size: 40px;
+    }
 
 }
