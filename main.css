@@ -436,9 +436,9 @@ td {
 }
 
 #testimonial-controller {
-    width: 140px;
+    width: 160px;
     position: absolute;
-    left: calc(50% - 70px);
+    left: calc(50% - 80px);
     height: 20px;
     bottom: 100px;
 }
